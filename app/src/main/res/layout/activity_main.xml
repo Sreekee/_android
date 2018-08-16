@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/background">
+
+        <ImageView
+            style="@style/sp_img_view"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/sp_Label"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="@string/course_details_lbl"
+            android:textColor="#BDBDBD"
+            android:textSize="22sp" />
+
+        <TextView
+            style="@style/sp_Label"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="@string/degree_lbl"
+            android:textColor="#757575" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioGroup
+                android:id="@+id/degreeRadioGrp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/beRadioBtn"
+                    style="@style/sp_radio_group_style"
+                    android:checked="true"
+                    android:text="@string/be_radio_btn" />
+
+                <RadioButton
+                    android:id="@+id/btechRadioBtn"
+                    style="@style/sp_radio_group_style"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/btech_radio_btn" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            style="@style/sp_horizontal_line_style"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            style="@style/sp_Label"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="@string/department_lbl"
+            android:textColor="#757575" />
+
+        <Spinner
+            android:id="@+id/departmentSpinner"
+            style="@style/spinner_style" />
+
+        <View
+            style="@style/sp_horizontal_line_style"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            style="@style/sp_Label"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="@string/semester_lbl"
+            android:textColor="#757575" />
+
+        <Spinner
+            android:id="@+id/semesterSpinner"
+            style="@style/spinner_style" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            style="@style/sp_button_style"
+            android:text="@string/go_btn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/reset_lbl"
+            style="@style/sp_Label"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/reset_lbl"
+            android:textColor="#512da8" />
+
+    </LinearLayout>
+
+</RelativeLayout>

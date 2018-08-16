@@ -1,0 +1,92 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ThemeFullScreen" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="sp_Header">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="sp_SubHeader" parent="sp_Header">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="sp_FieldValue" parent="sp_SubHeader">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorFieldValue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="sp_FieldSmall" parent="sp_FieldValue">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="sp_Label" parent="sp_FieldValue">
+        <item name="android:textColor">#333</item>
+    </style>
+
+    <style name="sp_HelpText" parent="sp_Label">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="sp_TextField" parent="sp_FieldValue">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/dropdown</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="sp_img_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="sp_radio_group_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:buttonTint" tools:ignore="NewApi">@color/colorRadioBtn</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="sp_horizontal_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">#60BDBDBD</item>
+    </style>
+
+    <style name="sp_button_style">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/button_bg_rounded_corners</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

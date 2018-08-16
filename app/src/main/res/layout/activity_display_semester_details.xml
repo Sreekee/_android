@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Controller.DisplaySemesterDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/background_img">
+
+        <ImageView
+            style="@style/sp_img_view"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            style="@style/sp_img_view"
+            android:id="@+id/backImgView"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            style="@style/sp_img_view"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/backImgView"
+            android:padding="10dp"
+            android:text="@string/course_list"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:layout_toEndOf="@id/backImgView" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/degreeLbl"
+            style="@style/sp_Label"
+            android:textColor="#BDBDBD"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/deptNameLbl"
+            style="@style/sp_FieldValue"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/sp_TextField"
+            android:layout_marginTop="20dp"
+            android:text="@string/semester_lbl"
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/semNoLbl"
+            style="@style/sp_TextField"
+            android:textColor="#212121"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/detailListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

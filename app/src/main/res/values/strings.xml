@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Span Enquirer</string>
+    <string name="course_list">Course List</string>
+    <string name="degree_lbl">Degree</string>
+    <string name="course_details_lbl">Course Details</string>
+    <string name="department_lbl">Department</string>
+    <string name="semester_lbl">Semester</string>
+    <string name="go_btn">Go</string>
+    <string name="be_radio_btn">BE</string>
+    <string name="btech_radio_btn">B.Tech</string>
+    <string name="select_lbl">Select</string>
+    <string name="reset_lbl"><u>Reset</u></string>
+</resources>
